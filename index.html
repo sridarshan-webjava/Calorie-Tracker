@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Calorie Tracker</h1>
+    </header>
+    <main>
+      <div class="form-section backward">
+        <form class="file-form" action="/" method="POST">
+          <div class="preview-container">
+            <img class="preview" alt="" />
+            <p class="img-text">No image selected</p>
+          </div>
+          <div class="form-input">
+            <div>
+              <label for="file">Choose the file</label>
+              <input type="file" name="file" id="file" />
+            </div>
+            <button class="btn" type="button" disabled>Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="display-section backward">
+        <h2 class="display-title">
+          You have consumed <span>176</span> calories
+        </h2>
+        <img class="preview img-cal" alt="" />
+        <ul>
+          <li class="table-head">
+            <p>Food Item</p>
+            <p>Calorie</p>
+          </li>
+        </ul>
+        <button class="btn">Go Back</button>
+      </div>
+    </main>
+    <div class="loading-screen hide">
+      <img src="./assets/Dual Ring-1s-207px.svg" alt="loading-animation" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
