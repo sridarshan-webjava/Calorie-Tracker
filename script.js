@@ -1,4 +1,3 @@
-// const form = document.querySelector("form");
 const formSection = document.querySelector(".form-section");
 const displaySection = document.querySelector(".display-section");
 const input = document.querySelector("input");
@@ -108,12 +107,6 @@ function resetDisplayScreen() {
 
 submitBtn.addEventListener("click", e => {
   setLoadingAnimation();
-  // setTimeout(() => {
-  //   hideLoadingAnimation();
-  //   setData();
-  //   moveScreensForward();
-  // }, 2000);
-  // formData.forEach(data => console.log(data));
   formData.append("image", input.files[0]);
   fetch("http://localhost:4000/", {
     method: "POST",
